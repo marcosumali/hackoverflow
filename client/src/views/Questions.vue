@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     getQuestions() {
-        axios.get('http://localhost:3000/questions/')
+        axios.get('http://hackoverflow-server.madebybastian.com/questions/')
         .then(result => {
             console.log(result);
             this.questions = result.data.questions;

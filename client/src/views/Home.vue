@@ -84,7 +84,7 @@ export default {
         password: this.password
       }
 
-      axios.post('http://localhost:3000/users/getUser', obj)
+      axios.post('http://hackoverflow-server.madebybastian.com/users/getUser', obj)
         .then(result => {
           console.log(result);
         })
@@ -99,7 +99,7 @@ export default {
         password: this.regpassword
       }
 
-      axios.post('http://localhost:3000/users/save', obj)
+      axios.post('http://hackoverflow-server.madebybastian.com/users/save', obj)
         .then(result => {
           console.log(result);
         })
